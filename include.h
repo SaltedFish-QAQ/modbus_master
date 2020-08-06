@@ -36,9 +36,10 @@ typedef struct
     mb_mFunctionHandler   mMBFunctionHandler;
 };
 
-
-#include "mbcrc.h"
-#include "mb_m_port.h"
-#include "mMBfuncholding.h"
+typedef struct 
+{
+    u8 changeFlag;
+    u16 dataValue;
+}RegTableType;
 
 #endif

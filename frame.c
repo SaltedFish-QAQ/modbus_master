@@ -1,4 +1,6 @@
 #include "frame.h"
+#include "mbcrc.h"
+#include "mMBfuncholding.h"
 
 #define MB_BUFFER_MAXSIZE   200
 
