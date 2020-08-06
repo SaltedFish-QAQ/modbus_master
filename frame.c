@@ -89,5 +89,10 @@ void mMBFuncReadHoldingRegister(u8 * mMBbuff)
 
 void mMBFuncWriteHoldingRegister(u8 * mMBbuff)
 {
+    u8   regAddr;
+    u8 * dataValuePtr;
 
+    regAddr = cmdTypeLast.regAddr;
+    dataValuePtr = mMBbuff +2;
+    Write_HoldingRegister(regAddr,dataValuePtr);
 }
