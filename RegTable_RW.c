@@ -1,7 +1,5 @@
 #include "RegTable_RW.h"
 
-#define REGTABLE_MAXSIZE    80
-
 static RegTableType regTableList[REGTABLE_MAXSIZE];
 
 void Set_RegTable(u8 index,u8 changeflag,u16 datavalue)

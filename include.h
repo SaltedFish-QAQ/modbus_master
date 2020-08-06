@@ -42,4 +42,7 @@ typedef struct
     u16 dataValue;
 }RegTableType;
 
+#define DATA_CHANGED     1
+#define DATA_NO_CHANGE   0
+
 #endif
