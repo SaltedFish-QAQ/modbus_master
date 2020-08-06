@@ -81,10 +81,10 @@ void mMBFuncReadHoldingRegister(u8 * mMBbuff)
     }
 
     regAddr = cmdTypeLast.regAddr;
-    regNUM = cmdTypeLast.dataValue;
+    regNUM = cmdTypeLast.dataValue;//在03功能?中，数据位保存信息位要读取的寄存器个数
     dataValuePtr = mMBbuff + 2;
     Read_HoldingRegister(regAddr,dataValuePtr,regNUM);
-    
+
 }
 
 void mMBFuncWriteHoldingRegister(u8 * mMBbuff)
